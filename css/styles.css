@@ -238,7 +238,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .sectcont{ width: calc((100% - 72px) / 4);
 }
-.vector2{ display: flex;
+.vector-sect2{ display: flex;
     align-items: center;
     justify-content: center;
     height: 112px;
@@ -248,7 +248,8 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin-bottom: 8px;
     text-align: center;
     margin: 0px;
-    padding: 0px;}
+    padding: 0px;
+ margin-bottom: 8px;}
 .h-sect{ color: #2e2f42; 
     font-weight: 500;
     font-size: 20px;
