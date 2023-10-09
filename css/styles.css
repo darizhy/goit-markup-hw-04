@@ -95,9 +95,16 @@ ul{list-style-type:none;
 display: inline-flex;
 }
 
-
-.link.active::after {
+.link.active:hover {
+    border-bottom: 2px solid #404BBF;
+    border-radius: 2px;
+    position: relative;
+}
+.link.active {
     color: #404bbf;
+}
+
+.link::after {
     content: "";
     position: absolute;
     left: 0;
@@ -108,11 +115,7 @@ display: inline-flex;
     width: 100%;
 
 }
-.link.link.active:hover{ border-bottom: 5px solid #404BBF;
-    border-radius: 2px;}
-.link.active {
-    color: #404bbf;
-}
+
 .li-nav{ color: #2E2F42; 
     font-weight: 500;
     font-size: 16px;
