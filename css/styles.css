@@ -93,7 +93,7 @@ ul{list-style-type:none;
 display: inline-flex;
 }
 
-.link.active:hover::after{
+.active::after{
     content: "______";
     position: absolute;
     left: 0%;
@@ -102,6 +102,7 @@ display: inline-flex;
     background-color: #404bbf;
     color: #404bbf;
 }
+
 
 /* .link.active:hover:before {color: #2e2f42;
     content: "";
