@@ -78,6 +78,7 @@ flex-shrink: 0;
 
 .link{ color: #2e2f42;
     display: inline-block;
+    position: relative;
     padding: 24px 0;
     font-weight: 500;
     font-size: 16px;
@@ -86,25 +87,23 @@ flex-shrink: 0;
     letter-spacing: 0.02em;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
-
 .link:hover,
 .link:focus{ color: #404bbf;}
 ul{list-style-type:none;
 display: inline-flex;
 }
 
-.link.active:hover {
-    border-bottom: 2px solid #404BBF;
-    border-radius: 2px;
-    position: relative;
-}
-.link.active {
+.link.active:hover::after{
+    content: "______";
+    position: absolute;
+    left: 0%;
+    bottom: -1px;
+    height: 4px;
+    background-color: #404bbf;
     color: #404bbf;
 }
 
-.link::after {
+/* .link.active:hover:before {color: #2e2f42;
     content: "";
     position: absolute;
     left: 0;
@@ -112,9 +111,30 @@ display: inline-flex;
     height: 4px;
     background-color: #404bbf;
     border-radius: 2px;
-    
-
+    border-bottom: 2px solid #404BBF;
+} */
+/* .link:hover:after {
+    color: #404bbf;
+    border-bottom: 2px solid #404BBF;} */
+/* .link.active:hover{
+    border-bottom: 2px solid #404BBF;
+    border-radius: 2px;
+    position: relative;
 }
+.link.link.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
+    border-bottom: 2px solid #404BBF;} */
+
+
+
+
+
 
 .li-nav{ color: #2E2F42; 
     font-weight: 500;
