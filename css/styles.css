@@ -92,7 +92,7 @@ flex-shrink: 0;
 ul{list-style-type:none;
 display: inline-flex;
 }
-
+.active{ color: #404bbf;}
 .active::after{
     content: "______";
     position: absolute;
