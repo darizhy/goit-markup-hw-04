@@ -102,6 +102,7 @@ display: inline-flex;
     background-color: #404bbf;
     color: #404bbf;
     width: 100%;
+    border-radius: 2px;
 }
 
 .li-nav{ color: #2E2F42; 
@@ -391,7 +392,7 @@ margin-bottom: 72px;}
 .container{ width: 1158px;
     margin: 0 auto;
     padding: 0 15px 0 15px;}
-
+.footer-div{ margin: 0 auto;}
 .porf-inside{  }
 .footer{ background-color: #2E2F42;
 padding: 100px 0 100px;
